@@ -1,4 +1,4 @@
-namespace Z_exsaaspoc.db;
+namespace Z_sapsaaspoc.db;
 
 entity Z_UnitOfMesure {
     key msehi        : String(3) @(title : '{i18n>mesureCode}');

@@ -1,6 +1,6 @@
 using CatalogService from '_base/srv/catalog-service';
-using Z_exsaaspoc.db as db from '../db/new';
-using Z_exsaaspoc.newfields as newfields from '../db/extend';
+using Z_sapsaaspoc.db as db from '../db/new';
+using Z_sapsaaspoc.newfields as newfields from '../db/extend';
 
 extend service CatalogService with {
 
@@ -23,7 +23,7 @@ annotate CatalogService.Sales with {
 
 annotate CatalogService.Products with {
     Z_weight @title : '{i18n>weight}';
-    Z_toUOM  @title : '{i18n>toUOM}';
+    //Z_toUOM  @title : '{i18n>toUOM}';
 
     toProductGroup @Common.ValueList: {
         CollectionPath : 'ProductGroups',

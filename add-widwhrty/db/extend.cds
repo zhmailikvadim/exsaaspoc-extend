@@ -1,6 +1,6 @@
-namespace Z_exsaaspoc.newfields;
-using exsaaspoc.db from '_base/db/data-model.cds';
-using Z_exsaaspoc.db as new from './new.cds';
+namespace Z_sapsaaspoc.newfields;
+using sapsaaspoc.db from '_base/db/data-model.cds';
+using Z_sapsaaspoc.db as new from './new.cds';
 
 extend entity db.Sales with {
     Z_city        : String(30);
