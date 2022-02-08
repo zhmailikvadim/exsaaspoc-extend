@@ -11,7 +11,11 @@ annotate CatalogService.Sales with @(UI : {
         {
             Value : Z_phone,
             Label : 'Phone'
-        }
+        },
+        {
+            Value : Z_totalAmount,
+            Label : 'Total Amount'
+        }        
     ],
 
     FieldGroup #Details     : {Data : [
@@ -24,6 +28,11 @@ annotate CatalogService.Sales with @(UI : {
             Value : Z_phone,
             Label : 'Phone'
         }, // extension field
+        {
+            Value : Z_totalAmount,
+            Label : 'Total Amount'
+        }   // extension field 
+
     ]},
     
     FieldGroup #Description : {Data : [
@@ -36,6 +45,10 @@ annotate CatalogService.Sales with @(UI : {
             Value : Z_phone,
             Label : 'Phone'
         }, // extension field
+        {
+            Value : Z_totalAmount,
+            Label : 'Total Amount'
+        }   // extension field         
     ]}
 });
 
@@ -48,5 +61,5 @@ annotate CatalogService.Products with @(UI : {
     FieldGroup #Details3    : {Data : [..., {
         Value : Z_weight,
         Label : 'Weight'
-    }]}
+    } ]}
 });

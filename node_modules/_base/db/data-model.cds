@@ -3,7 +3,7 @@ using {
     managed
 } from '@sap/cds/common';
 
-context exsaaspoc.db {
+context pbsaaspoc1.db {
 
     entity Sales {
         key salesUUID   : UUID;

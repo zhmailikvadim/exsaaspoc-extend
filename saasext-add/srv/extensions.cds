@@ -1,6 +1,6 @@
 using CatalogService from '_base/srv/catalog-service';
-using Z_sapsaaspoc.db as db from '../db/new';
-using Z_sapsaaspoc.newfields as newfields from '../db/extend';
+using Z_pbsaaspoc1.db as db from '../db/new';
+using Z_pbsaaspoc1.newfields as newfields from '../db/extend';
 
 extend service CatalogService with {
 
@@ -14,12 +14,6 @@ annotate CatalogService.Sales with {
     Z_totalAmount @title : '{i18n>totalAmount}' @UI.DataFieldDefault;
 };
 
-// annotate CatalogService.Sales with @(UI :{
-//   LineItem: [ {
-//                 $Type:'UI.DataField',
-//                 Value : Z_city,
-//             }] 
-// });
 
 annotate CatalogService.Products with {
     Z_weight @title : '{i18n>weight}';

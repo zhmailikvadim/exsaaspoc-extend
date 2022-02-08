@@ -1,4 +1,4 @@
-using {exsaaspoc.db as db} from '../db/data-model';
+using {pbsaaspoc1.db as db} from '../db/data-model';
 
 using {
     CV_SALES,
